@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.image{
+  background-image:url(./Assets/the701.svg),linear-gradient(rgb(16,16,126),rgb(12,12,72),black);
+  /* background-size: cover; */
+
+}
+img{
+  height: 100%;
+  width: 100%;
+  background-size: 100% 100%
+}
+
+
+:root {
+  --text: white;
+  --family:cursive;
+  --margin: 10px;
+  --icon: #03d87d;
+  --size:1.2rem;
+  --container:80%;
+  --margun:0 auto;
+  --gradien:radial-gradient(rgb(16,16,126),rgb(12,12,72),black);
+}
+.container_fluid{
+  width: var(--container);
+  margin: var(--margun);
+}
+.head {
+  color: var(--text);
+  font-family: var(--family);
+}
+.nav{
+  background: var(--gradien);
+}
+ul > li {
+  margin: var(--margin);
+  font-size: var(--size);
+  
+}
+ul>li:hover{
+color: #03d87d;
+transition-duration: 1s;
+text-decoration: underline;
+}
+.icon{
+    color: var(--icon);
+}
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+
